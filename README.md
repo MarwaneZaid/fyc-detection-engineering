@@ -17,18 +17,28 @@ GitHub est le seul endroit où l'avancement, les corrections et les décisions s
 
 ## Tableau
 
-Cinq colonnes : **À faire**, **En cours**, **Relu par l'équipe**, **Chez le mentor**, **Validé**.
+Les cartes sont les issues : une par vidéo, chapitre, exercice et pour l'examen. Le mentor ouvre [les issues](https://github.com/MarwaneZaid/fyc-detection-engineering/issues) ou [les jalons](https://github.com/MarwaneZaid/fyc-detection-engineering/milestones).
 
-Une carte par vidéo, chapitre, exercice et par l'examen. Le responsable de la carte la déplace. **Validé** veut dire que le mentor a approuvé la pull request.
+Une carte porte un seul label de statut. Le responsable le change quand l'étape change.
+
+| Label | Sens |
+|---|---|
+| `statut: a-faire` | Pas commencé |
+| `statut: en-cours` | En production |
+| `statut: relu` | Relu par un autre membre |
+| `statut: mentor` | En attente d'Adam Rahmi |
+| `statut: valide` | Pull request approuvée |
+
+Les jalons découpent l'année : séance 2 (environ 30 %), séance 3 (environ 50 %), séance 4, dépôt Moodle.
 
 ## Correction
 
 1. Le responsable ouvre une pull request.
 2. Un autre membre du groupe relit et demande les corrections de forme.
-3. La carte passe dans **Chez le mentor**.
+3. Le label passe à `statut: mentor`.
 4. Le mentor commente sur le passage concerné.
 5. La correction part sur la même branche. Le fil reste ouvert tant que ce n'est pas réglé.
-6. L'approbation puis le merge sont la trace.
+6. L'approbation puis le merge sont la trace. Le label passe à `statut: valide`.
 
 Une décision de séance (SIEM, nombre de vidéos, rôles) s'écrit dans une issue **Décision**, datée. Le rapport de séance pointe vers ces issues.
 
