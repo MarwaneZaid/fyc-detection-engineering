@@ -1,0 +1,36 @@
+name: Vidéo
+description: Une vidéo du cours, de la préparation jusqu'à la validation mentor
+title: "Vidéo : "
+labels: ["type: video", "statut: a-faire"]
+body:
+  - type: input
+    id: code
+    attributes:
+      label: Code
+      placeholder: V3
+    validations:
+      required: true
+  - type: input
+    id: responsable
+    attributes:
+      label: Responsable
+      placeholder: Prénom
+    validations:
+      required: true
+  - type: textarea
+    id: contenu
+    attributes:
+      label: Contenu à couvrir
+      description: Ce que l'apprenant doit retenir.
+    validations:
+      required: true
+  - type: checkboxes
+    id: dod
+    attributes:
+      label: Terminée seulement si
+      options:
+        - label: Script relu par un autre membre
+        - label: Durée tenue (8 min, 3 min pour la présentation)
+        - label: Sous-titres faits
+        - label: Section de poly correspondante au moins en brouillon
+        - label: Fichiers déposés dans le dépôt

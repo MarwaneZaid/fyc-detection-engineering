@@ -1,0 +1,23 @@
+name: Décision
+description: Un choix à figer avec le mentor. La décision reste dans le fil.
+title: "Décision : "
+labels: ["type: decision"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options
+      description: Une option par ligne, avec la préférence du groupe.
+    validations:
+      required: true
+  - type: textarea
+    id: retenue
+    attributes:
+      label: Décision retenue
+      description: À remplir après l'avis du mentor, avec la date.

@@ -1,0 +1,37 @@
+name: Poly, exercice ou examen
+description: Un chapitre, un exercice Docker/GitHub ou l'examen
+title: "Livrable : "
+labels: ["statut: a-faire"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Poly
+        - Exercice
+        - Examen
+    validations:
+      required: true
+  - type: input
+    id: responsable
+    attributes:
+      label: Responsable
+      placeholder: Prénom
+    validations:
+      required: true
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Résultat attendu
+    validations:
+      required: true
+  - type: checkboxes
+    id: dod
+    attributes:
+      label: Terminé seulement si
+      options:
+        - label: Relu par un autre membre
+        - label: Corrigé joint, s'il s'agit d'un exercice ou de l'examen
+        - label: Relecture mentor traitée
+        - label: Fichiers dans le dépôt

@@ -1,0 +1,23 @@
+name: État de la semaine
+description: Le point que le mentor lit entre deux séances
+title: "État : "
+labels: ["type: etat"]
+body:
+  - type: textarea
+    id: avance
+    attributes:
+      label: Ce qui a avancé
+    validations:
+      required: true
+  - type: textarea
+    id: bloque
+    attributes:
+      label: Ce qui bloque
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question pour le mentor
+    validations:
+      required: true
