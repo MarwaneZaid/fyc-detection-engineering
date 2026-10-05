@@ -4,6 +4,34 @@ Cours FYC ESGI 2026-2027. Groupe : Victor Tassart, Marwane Zaid, Younès Hannour
 
 GitHub est le seul endroit où l'avancement, les corrections et les décisions sont visibles. Le mentor suit le tableau entre les quatre séances. Il commente dans les pull requests. Il ne pousse pas de commits.
 
+## Qui fait quoi
+
+Chacun produit. Une personne répond d'un domaine : elle dit quand une carte de ce domaine est prête pour le mentor. Le détail est dans l'issue [Décision : attribution des rôles](https://github.com/MarwaneZaid/fyc-detection-engineering/issues/30). On peut échanger un rôle en commentaire sur cette issue.
+
+| Personne | Compte | Domaine | Premières cartes |
+|---|---|---|---|
+| Marwane Zaid | `MarwaneZaid` | Pilotage | V1, intro du poly, état, décisions |
+| Victor Tassart | `moralisateur380` | Forme | V2, V4 |
+| Younès Hannour | `youneshannour` | Poly | Chapitres 1 et 2 |
+| Jacques-D'evaldo Tobossou | `jackevaldo` | Labs | V3, [brouillon Docker](https://github.com/MarwaneZaid/fyc-detection-engineering/issues/36) |
+
+## Setup
+
+À faire une fois, sur son propre ordinateur, avant d'écrire du contenu.
+
+1. Accepter l'invitation GitHub si ce n'est pas déjà fait.
+2. Cloner le dépôt : `git clone https://github.com/MarwaneZaid/fyc-detection-engineering.git`
+3. Entrer dans le dossier, puis poser son identité pour ce dépôt seulement :
+
+```
+git config user.name "Prénom Nom"
+git config user.email "email-du-compte-github"
+```
+
+4. Créer sa branche : `git checkout -b prenom/v1-script` (le nom décrit le travail).
+5. Ouvrir ses cartes, passer la première en `statut: en-cours`, travailler, pousser la branche, ouvrir une pull request.
+6. Un autre membre relit. Ensuite seulement, le label passe à `statut: mentor`.
+
 ## Dossiers
 
 | Dossier | Contenu |
